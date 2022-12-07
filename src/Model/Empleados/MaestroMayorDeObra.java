@@ -1,12 +1,12 @@
 
-package Empleados;
+package Model.Empleados;
 
 
 public class MaestroMayorDeObra extends Empleado {
       private int edad;
       private int sueldoDiario = 1800;
 
-    public MaestroMayorDeObra(int edad, String nombre, int dni, int telefono) {
+    public MaestroMayorDeObra(int edad, String nombre, String dni, String telefono) {
         super(nombre, dni, telefono);
         this.edad = edad;
     }
@@ -27,19 +27,19 @@ public class MaestroMayorDeObra extends Empleado {
         this.nombre = nombre;
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

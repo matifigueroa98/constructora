@@ -1,12 +1,13 @@
 
-package Empleados;
+package Model.Empleados;
 
 
 public class Empleado {
     protected String nombre;
-    protected int dni,telefono;
+    protected String dni;
+    protected String telefono;
 
-    public Empleado(String nombre, int dni, int telefono) {
+    public Empleado(String nombre, String dni, String telefono) {
         this.nombre = nombre;
         this.dni = dni;
         this.telefono = telefono;   
@@ -16,11 +17,11 @@ public class Empleado {
         return nombre;
     }
 
-    public int getDni() {
+    public String getDni() {
         return dni;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
@@ -28,11 +29,11 @@ public class Empleado {
         this.nombre = nombre;
     }
 
-    public void setDni(int dni) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
