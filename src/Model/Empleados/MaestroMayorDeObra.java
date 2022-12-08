@@ -4,7 +4,7 @@ package Model.Empleados;
 
 public class MaestroMayorDeObra extends Empleado {
       private int edad;
-      private int sueldoDiario = 1800;
+     public static final int SUELDO_DIARIO = 1800;
 
     public MaestroMayorDeObra(int edad, String nombre, String dni, String telefono) {
         super(nombre, dni, telefono);
@@ -44,13 +44,9 @@ public class MaestroMayorDeObra extends Empleado {
     }
 
     public int getSueldoDiario() {
-        return sueldoDiario;
+        return SUELDO_DIARIO;
     }
 
-    public void setSueldoDiario(int sueldoDiario) {
-        this.sueldoDiario = sueldoDiario;
-    }
-    
      public void construir (){
        System.out.println("Soy maestro y superviso las construcciones");
    }

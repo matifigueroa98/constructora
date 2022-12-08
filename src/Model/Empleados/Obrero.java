@@ -3,7 +3,7 @@ package Model.Empleados;
 
 public class Obrero extends Empleado {
    private int edad;
-   private int sueldoDiario = 1500;
+   public static final int SUELDO_DIARIO = 1500;
 
     public Obrero(int edad, String nombre, String dni, String telefono) {
         super(nombre, dni, telefono);
@@ -43,12 +43,8 @@ public class Obrero extends Empleado {
     }
 
     public int getSueldoDiario() {
-        return sueldoDiario;
+        return SUELDO_DIARIO;
     }
-
-    public void setSueldoDiario(int sueldoDiario) {
-        this.sueldoDiario = sueldoDiario;
-    }  
    
    public void construir (){
        System.out.println("Soy obrero y construyo");
