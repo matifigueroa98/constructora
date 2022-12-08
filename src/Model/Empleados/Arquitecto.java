@@ -1,10 +1,9 @@
 
 package Model.Empleados;
 
-
 public class Arquitecto extends Empleado {
     private int numeroMatricula;
-    private int sueldoDiario = 2000;
+    public static final int SUELDO_DIARIO = 2000;
 
     public Arquitecto(int numeroMatricula, String nombre, String dni, String telefono) {
         super(nombre, dni, telefono);
@@ -19,37 +18,40 @@ public class Arquitecto extends Empleado {
         this.numeroMatricula = numeroMatricula;
     }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
+    @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    @Override
     public String getDni() {
         return dni;
     }
 
+    @Override
     public void setDni(String dni) {
         this.dni = dni;
     }
 
+    @Override
     public String getTelefono() {
         return telefono;
     }
 
+    @Override
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
     public int getSueldoDiario() {
-        return sueldoDiario;
+        return SUELDO_DIARIO;
     }
 
-    public void setSueldoDiario(int sueldoDiario) {
-        this.sueldoDiario = sueldoDiario;
-    }
 
     public void crearPlanos (){
         System.out.println("creando mi proximo plano");

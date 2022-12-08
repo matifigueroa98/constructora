@@ -2,7 +2,7 @@
 package Model.Empleados;
 
 
-public class Empleado {
+public abstract class Empleado {
     protected String nombre;
     protected String dni;
     protected String telefono;
