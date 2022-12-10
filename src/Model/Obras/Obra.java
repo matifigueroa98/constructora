@@ -20,6 +20,10 @@ public abstract class Obra {
         this.costom2 = costom2;
         this.listaPersonal = listaPersonal;
     }
+    
+    public double precioEstimadoTotalDeObra (int costoEmpleados){
+        return ((costom2 * cantidadm2) + (costoEmpleados)) * tiempoObra;
+    }
 
     public String getDireccion() {
         return direccion;
@@ -64,10 +68,5 @@ public abstract class Obra {
     @Override
     public String toString() {
         return "Obra{" + "direccion=" + direccion + ", cantidadm2=" + cantidadm2 + ", tiempoObra=" + tiempoObra + ", costom2=" + costom2 + ", listaPersonal=" + listaPersonal + '}';
-    }
-    
-    
-    
-    
-    
+    } 
 }
