@@ -5,8 +5,8 @@ public class Arquitecto extends Empleado {
     private int numeroMatricula;
     public static final int SUELDO_DIARIO = 2000;
 
-    public Arquitecto(int numeroMatricula, String nombre, String dni, String telefono) {
-        super(nombre, dni, telefono);
+    public Arquitecto(int numeroMatricula, String nombre, String dni, String telefono, int costo) {
+        super(nombre, dni, telefono, costo);
         this.numeroMatricula = numeroMatricula;
     }
 
@@ -52,6 +52,15 @@ public class Arquitecto extends Empleado {
         return SUELDO_DIARIO;
     }
 
+    @Override
+    public int getCosto() {
+        return costo;
+    }
+
+    @Override
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
 
     public void crearPlanos (){
         System.out.println("creando mi proximo plano");

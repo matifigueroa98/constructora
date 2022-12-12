@@ -32,6 +32,18 @@ public abstract class Obra {
     public double precioEstimadoTotalDeObra (double costoEmpleados){
         return ((costom2 * cantidadm2) + (costoEmpleados)) * tiempoObra;
     }
+    
+    public String precioEstimado (){ 
+        return ("precio total estimado: $"+ precioEstimadoTotalDeObra(calcularCostoEmpleados(getListaPersonal())));
+    }
+    
+    public int calcularCostoEmpleados (ArrayList <Empleado> listaPersonal){
+        int costo = 0;
+        for (Empleado i: listaPersonal){
+           costo += i.getCosto();
+        }
+        return costo;
+    }
 
     public String getDireccion() {
         return direccion;

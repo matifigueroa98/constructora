@@ -5,8 +5,8 @@ public class Obrero extends Empleado {
    private int edad;
    public static final int SUELDO_DIARIO = 1500;
 
-    public Obrero(int edad, String nombre, String dni, String telefono) {
-        super(nombre, dni, telefono);
+    public Obrero(int edad, String nombre, String dni, String telefono, int costo) {
+        super(nombre, dni, telefono, costo);
         this.edad = edad;
     }
 
@@ -49,5 +49,13 @@ public class Obrero extends Empleado {
    public void construir (){
        System.out.println("Soy obrero y construyo");
    }
+
+    public int getCosto() {
+        return costo;
+    }
+
+    public void setCosto(int costo) {
+        this.costo = costo;
+    }
     
 }

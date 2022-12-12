@@ -6,9 +6,17 @@ public class MaestroMayorDeObra extends Empleado {
       private int edad;
      public static final int SUELDO_DIARIO = 1800;
 
-    public MaestroMayorDeObra(int edad, String nombre, String dni, String telefono) {
-        super(nombre, dni, telefono);
+    public MaestroMayorDeObra(int edad, String nombre, String dni, String telefono, int costo) {
+        super(nombre, dni, telefono, costo);
         this.edad = edad;
+    }
+
+    public int getCosto() {
+        return costo;
+    }
+
+    public void setCosto(int costo) {
+        this.costo = costo;
     }
 
     public int getEdad() {

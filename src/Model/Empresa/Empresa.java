@@ -2,8 +2,7 @@
 package Model.Empresa;
 
 import Model.Empleados.*;
-import Model.Obras.*;
-import java.time.temporal.TemporalQueries;
+import Model.Obras.Obra;
 import java.util.ArrayList;
 
 
@@ -14,13 +13,11 @@ public class Empresa {
 
     public Empresa(String nombre) {
         this.nombre = nombre;
-        this.listaEmpleados = listaEmpleados;
-        this.obrasRealizadas = obrasRealizadas;   
     }
     
-    public void listaObras (){
-        for (int i=0; i< obrasRealizadas.size();i++){
-            System.out.println((i+1)+" .Obra: ");
+    public void verObras (ArrayList <Obra> obrasRealizadas){
+        for (Obra o : obrasRealizadas){
+            System.out.println(o.precioEstimado()); //falta completar
         }
     }
     
@@ -40,7 +37,7 @@ public class Empresa {
         this.nombre = nombre;
     }
 
-    public ArrayList getListaEmpleados() {
+    public ArrayList <Empleado> getListaEmpleados() {
         return listaEmpleados;
     }
 
@@ -48,14 +45,13 @@ public class Empresa {
         this.listaEmpleados = listaEmpleados;
     }
 
-    public ArrayList getObrasRealizadas() {
+    public ArrayList <Obra> getObrasRealizadas() {
         return obrasRealizadas;
     }
 
     public void setObrasRealizadas(ArrayList obrasRealizadas) {
         this.obrasRealizadas = obrasRealizadas;
-    }
-    
+    } 
   
    
 }
