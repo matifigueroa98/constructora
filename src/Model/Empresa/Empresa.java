@@ -3,6 +3,7 @@ package Model.Empresa;
 
 import Model.Empleados.*;
 import Model.Obras.*;
+import java.time.temporal.TemporalQueries;
 import java.util.ArrayList;
 
 
@@ -11,10 +12,20 @@ public class Empresa {
    protected ArrayList listaEmpleados = new ArrayList <Empleado> ();
    protected ArrayList obrasRealizadas = new  ArrayList <Obra> (); 
 
-    public Empresa(String nombre, ArrayList listaEmpleados, ArrayList obrasRealizadas) {
+    public Empresa(String nombre) {
         this.nombre = nombre;
         this.listaEmpleados = listaEmpleados;
         this.obrasRealizadas = obrasRealizadas;   
+    }
+    
+    public void listaObras (){
+        for (int i=0; i< obrasRealizadas.size();i++){
+            System.out.println((i+1)+" .Obra: "+ getObrasRealizadas());
+        }
+    }
+    
+    public void agregarObras (Obra obra){
+        obrasRealizadas.add(obra);
     }
 
     public void asignarEmpleados (Empleado empleado){

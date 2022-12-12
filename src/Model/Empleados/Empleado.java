@@ -39,7 +39,7 @@ public abstract class Empleado {
 
     @Override
     public String toString() {
-        return "Empleado{" + "nombre=" + nombre + ", dni=" + dni + ", telefono=" + telefono;
+        return "Empleado{" + "nombre= " + nombre + ", dni= " + dni + ", telefono= " + telefono;
     } 
     
 }
