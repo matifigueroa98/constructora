@@ -21,7 +21,15 @@ public abstract class Obra {
         this.listaPersonal = listaPersonal;
     }
     
-    public double precioEstimadoTotalDeObra (int costoEmpleados){
+    public void recorrerEmpleados (){
+        System.out.println("Empleados de la obra: \n");
+    for (Empleado i: getListaPersonal()){ 
+         System.out.println(i);
+     }
+    System.out.println("-----------------");
+    }
+    
+    public double precioEstimadoTotalDeObra (double costoEmpleados){
         return ((costom2 * cantidadm2) + (costoEmpleados)) * tiempoObra;
     }
 
