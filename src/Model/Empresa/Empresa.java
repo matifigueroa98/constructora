@@ -20,7 +20,7 @@ public class Empresa {
     
     public void listaObras (){
         for (int i=0; i< obrasRealizadas.size();i++){
-            System.out.println((i+1)+" .Obra: "+ getObrasRealizadas());
+            System.out.println((i+1)+" .Obra: ");
         }
     }
     
