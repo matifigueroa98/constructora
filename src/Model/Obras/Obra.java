@@ -29,7 +29,7 @@ public abstract class Obra {
     System.out.println("-----------------");
     }
     
-    public double precioEstimadoTotalDeObra (double costoEmpleados){
+    public double precioEstimadoTotalDeObra (int costoEmpleados){
         return ((costom2 * cantidadm2) + (costoEmpleados)) * tiempoObra;
     }
     

@@ -17,7 +17,7 @@ public class Empresa {
     
     public void verObras (ArrayList <Obra> obrasRealizadas){
         for (Obra o : obrasRealizadas){
-            System.out.println(o.precioEstimado()); //falta completar
+            System.out.println(o.precioEstimado());
         }
     }
     

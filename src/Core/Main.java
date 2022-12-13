@@ -31,13 +31,13 @@ public class Main {
     
         ArrayList<Empleado> listaPersonal = empresa.getListaEmpleados();
     Hotel hotel = new Hotel (5, "Agus Hotel", "Zubiria 3000", 45, 34, 16, listaPersonal);
-        System.out.println("el precio total del hotel es: "+hotel.precioEstimadoTotalDeObra(5));
+        System.out.println("el precio total del hotel es: "+hotel.precioEstimado());
 
     Comercio comercio = new Comercio ("cerveceria", "Antares", "Roca 1570", 60, 55, 30, listaPersonal);
-        System.out.println("el precio total del comercio es: "+ comercio.precioEstimadoTotalDeObra(8));
+        System.out.println("el precio total del comercio es: "+ comercio.precioEstimado());
     
     ObrasDomesticas domesticas = new ObrasDomesticas(7, "Luro 1600", 24, 27, 20, listaPersonal);
-        System.out.println("el precio total de la obra domestica es: "+ domesticas.precioEstimadoTotalDeObra(6));
+        System.out.println("el precio total de la obra domestica es: "+ domesticas.precioEstimado());
         
      empresa.agregarObras(hotel);
      empresa.agregarObras(comercio);
@@ -50,6 +50,5 @@ public class Main {
      ArrayList <Obra> obrasRealizadas = empresa.getObrasRealizadas(); 
      empresa.verObras(obrasRealizadas);
      
-     empresa.verObras(obrasRealizadas);
     } 
 }
