@@ -1,8 +1,10 @@
 
 package Model.Empleados;
 
+import Interfaces.ITrabajo;
 
-public class MaestroMayorDeObra extends Empleado {
+
+public class MaestroMayorDeObra extends Empleado implements ITrabajo {
       private int edad;
      public static final int SUELDO_DIARIO = 1800;
 
@@ -11,10 +13,12 @@ public class MaestroMayorDeObra extends Empleado {
         this.edad = edad;
     }
 
+      @Override
     public int getCosto() {
         return costo;
     }
 
+      @Override
     public void setCosto(int costo) {
         this.costo = costo;
     }
@@ -27,26 +31,32 @@ public class MaestroMayorDeObra extends Empleado {
         this.edad = edad;
     }
 
+      @Override
     public String getNombre() {
         return nombre;
     }
 
+      @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+      @Override
     public String getDni() {
         return dni;
     }
 
+      @Override
     public void setDni(String dni) {
         this.dni = dni;
     }
 
+      @Override
     public String getTelefono() {
         return telefono;
     }
 
+      @Override
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
@@ -55,6 +65,7 @@ public class MaestroMayorDeObra extends Empleado {
         return SUELDO_DIARIO;
     }
 
+      @Override
      public void construir (){
        System.out.println("Soy maestro y superviso las construcciones");
    }
