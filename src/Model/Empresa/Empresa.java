@@ -8,14 +8,17 @@ import java.util.ArrayList;
 
 public class Empresa {
    protected String nombre;
-   protected ArrayList listaEmpleados = new ArrayList <Empleado> ();
-   protected ArrayList obrasRealizadas = new  ArrayList <Obra> (); 
+   protected ArrayList <Empleado> listaEmpleados;
+   protected ArrayList <Obra> obrasRealizadas; 
 
     public Empresa(String nombre) {
+        this.listaEmpleados = new ArrayList <> ();
+        this.obrasRealizadas = new  ArrayList <> ();
         this.nombre = nombre;
     }
+
     
-    public void verObras (ArrayList <Obra> obrasRealizadas){
+    public void verObras (){
         for (Obra o : obrasRealizadas){
             System.out.println(o.precioEstimado());
         }
@@ -51,7 +54,6 @@ public class Empresa {
 
     public void setObrasRealizadas(ArrayList obrasRealizadas) {
         this.obrasRealizadas = obrasRealizadas;
-    } 
-  
+    }   
    
 }

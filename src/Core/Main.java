@@ -47,8 +47,6 @@ public class Main {
      comercio.recorrerEmpleados();
      domesticas.recorrerEmpleados();
      
-     ArrayList <Obra> obrasRealizadas = empresa.getObrasRealizadas(); 
-     empresa.verObras(obrasRealizadas);
-     
+     empresa.verObras();
     } 
 }
